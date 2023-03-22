@@ -44,25 +44,25 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <hr class="dropdown-divider bg-dark" />
-                            <a id="nav-hover" class="nav-link active mt-4" href="home.html">
-                                <div class="sb-nav-link-icon" id="icon"><i class="fas fa-home"></i></div>Home
+                            <hr class="dropdown-divider bg-white"/>
+                            <a id="nav-hover" class="nav-link mt-4" href="home.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-home" id="icon"></i></div>Home
                             </a>
                             <hr class="dropdown-divider bg-dark"/>
-                            <a id="nav-hover" href="Add_Comelec.html" class="nav-link "><div class="sb-nav-link-icon"><i
+                            <a id="nav-hover" href="Add_Comelec.html" class="nav-link active"><div class="sb-nav-link-icon"><i
                                     class="fa fa-user me-2" id="icon"></i></div>Comelec</a>
                             <hr class="dropdown-divider bg-dark"/>
                             <a id="nav-hover" href="Interview.html" class="nav-link"><div class="sb-nav-link-icon"><i 
                                 class="fa-solid fa-podcast" id="icon"></i></div>Interview</a>
                             <hr class="dropdown-divider bg-dark"/>
-                            <a id="nav-hover" href="" class="nav-link "><div class="sb-nav-link-icon"><i 
+                            <a id="nav-hover" href="Candidate.html" class="nav-link "><div class="sb-nav-link-icon"><i 
                                 class="fas fa-users" id="icon"></i></div>Candidates</a>
                             <hr class="dropdown-divider bg-dark"/>
                             <a id="nav-hover" href="Results.html" class="nav-link "><div class="sb-nav-link-icon"><i 
                                 class="fa-solid fa-square-poll-vertical" id="icon"></i></div>Results</a>
                             <hr class="dropdown-divider bg-dark"/>
 
-                            <a id="nav-hover" href="Election.html" class="nav-link"><div class="sb-nav-link-icon"><i 
+                            <a id="nav-hover" href="Election.html" class="nav-link "><div class="sb-nav-link-icon"><i 
                                 class='fas fa-vote-yea' id="icon"></i></div>Election</a>
                             <hr class="dropdown-divider bg-white"/>
                         
@@ -80,15 +80,16 @@
                     <div class="d-flex justify-content-between mt-4 mx-4 my-3">
                         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item active" aria-current="page"> <i class="fas fa-home"></i> HOME</li>
+                              <li class="breadcrumb-item"><a href="home.html" style="text-decoration: none;"> <i class="fas fa-home"></i> HOME</a></li>
+                              <li class="breadcrumb-item active" aria-current="page"><i class="fa fa-user me-2"></i>COMELEC</li>
                             </ol>
                         </nav>
 
                         <div>
-                            <button type="button" class="btn btn-sm btn-primary mb-3 me-2" tabindex="-1" data-bs-toggle="modal" data-bs-target="#add">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                                    Add Admin
-                            </button>
+                            <button type="button" class="btn btn-sm btn-primary mb-3 me-2" tabindex="-1" data-bs-toggle="modal" data-bs-target="#addComelec">
+                                <i class="fa fa-plus" aria-hidden="true" ></i>
+                                    ADD COMELEC
+                                </button>
                         </div>
                         
                        
@@ -153,7 +154,7 @@
                     </div>
                 </main>
 
-                <div class="modal fade modal-signin" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade modal-signin" id="addComelec" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
                         <div class="modal-content rounded-5 shadow" style="border-radius: 30px;">
                             <div class="modal-header p-3 pb-3">
@@ -195,14 +196,12 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Add as Admin</button>
+                                    <button type="button" class="btn btn-primary">Add as Comelec</button>
                                 </div>
                         
                             </form>
                         </div>
                     </div>
-
-                
                 </div>
 
             <footer class="py-4 bg-light mt-auto">

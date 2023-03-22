@@ -44,9 +44,9 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <hr class="dropdown-divider bg-dark" />
-                            <a id="nav-hover" class="nav-link active mt-4" href="home.html">
-                                <div class="sb-nav-link-icon" id="icon"><i class="fas fa-home"></i></div>Home
+                            <hr class="dropdown-divider bg-white"/>
+                            <a id="nav-hover" class="nav-link mt-4" href="home.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-home" id="icon"></i></div>Home
                             </a>
                             <hr class="dropdown-divider bg-dark"/>
                             <a id="nav-hover" href="Add_Comelec.html" class="nav-link "><div class="sb-nav-link-icon"><i
@@ -55,14 +55,14 @@
                             <a id="nav-hover" href="Interview.html" class="nav-link"><div class="sb-nav-link-icon"><i 
                                 class="fa-solid fa-podcast" id="icon"></i></div>Interview</a>
                             <hr class="dropdown-divider bg-dark"/>
-                            <a id="nav-hover" href="" class="nav-link "><div class="sb-nav-link-icon"><i 
+                            <a id="nav-hover" href="Candidate.html" class="nav-link "><div class="sb-nav-link-icon"><i 
                                 class="fas fa-users" id="icon"></i></div>Candidates</a>
                             <hr class="dropdown-divider bg-dark"/>
                             <a id="nav-hover" href="Results.html" class="nav-link "><div class="sb-nav-link-icon"><i 
                                 class="fa-solid fa-square-poll-vertical" id="icon"></i></div>Results</a>
                             <hr class="dropdown-divider bg-dark"/>
 
-                            <a id="nav-hover" href="Election.html" class="nav-link"><div class="sb-nav-link-icon"><i 
+                            <a id="nav-hover" href="Election.html" class="nav-link active"><div class="sb-nav-link-icon"><i 
                                 class='fas fa-vote-yea' id="icon"></i></div>Election</a>
                             <hr class="dropdown-divider bg-white"/>
                         
@@ -80,15 +80,18 @@
                     <div class="d-flex justify-content-between mt-4 mx-4 my-3">
                         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item active" aria-current="page"> <i class="fas fa-home"></i> HOME</li>
+                              <li class="breadcrumb-item"><a href="home.html" style="text-decoration: none;"> <i 
+                                class="fa-solid fa-square-poll-vertical"></i> RESULTS</a></li>
+                              <li class="breadcrumb-item active" aria-current="page"><i 
+                                class='fas fa-vote-yea'></i> ELECTION</li>
                             </ol>
                         </nav>
 
                         <div>
-                            <button type="button" class="btn btn-sm btn-primary mb-3 me-2" tabindex="-1" data-bs-toggle="modal" data-bs-target="#add">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                                    Add Admin
-                            </button>
+                            <button type="button" class="btn btn-sm btn-primary mb-3 me-2" tabindex="-1" data-bs-toggle="modal" data-bs-target="#election">
+                                <i class="fa fa-plus" aria-hidden="true" ></i>
+                                    ADD ELECTION
+                                </button>
                         </div>
                         
                        
@@ -99,28 +102,21 @@
                             <table class="table table-hover" id="datatablesSimple">
                                 <thead>
                                     <tr>
-                                        <th>Full Name</th>
-                                        <th>Access code</th>
-                                        <th>Action</th>
+                                        <th>ELECTION</th>
+                                        <th>START DATE</th>
+                                        <th>END DATE</th>
+                                        <th>STATUS</th>
+                                        <th>ACTION</th>
                                       
                                     </tr>
                                     <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>
-                                                <div class="d-flex justify-content-center">
-                                                    <button class="btn btn-sm btn-success mx-3"><i class="fas fa-edit"></i> Edit</button>
-                                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Delete</button>
-                                                </div>
-                                               
-                                            </td>
-                                           
-                                        </tr>
+                                       
 
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
+                                            <td>ITE ELECTION</td>
+                                            <td>03/22/23</td>
+                                            <td>03/22/23</td>
+                                            <td>ACTIVE</td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
                                                     <button class="btn btn-sm btn-success mx-3"><i class="fas fa-edit"> </i> Edit</button>
@@ -130,17 +126,7 @@
                                            
                                         </tr>
 
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>
-                                                <div class="d-flex justify-content-center">
-                                                    <button class="btn btn-sm btn-success mx-3"><i class="fas fa-edit"> </i> Edit</button>
-                                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Delete</button>
-                                                </div>
-                                            </td>
-                                           
-                                        </tr>
+                                       
                                       
                                         
                                     </tbody>
@@ -153,11 +139,11 @@
                     </div>
                 </main>
 
-                <div class="modal fade modal-signin" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade modal-signin" id="election" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
                         <div class="modal-content rounded-5 shadow" style="border-radius: 30px;">
                             <div class="modal-header p-3 pb-3">
-                                <h5 class="modal-title" id="staticBackdropLabel">Adding Admin</h5>
+                                <h5 class="modal-title" id="staticBackdropLabel">Adding Election</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <br>
@@ -165,44 +151,52 @@
                                 <div class="modal-body p-5 pt-0">
                             
                                     <div class="mb-3 row">
-                                        <label for="inputPassword" class="col-sm-3 col-form-label">First Name: </label>
+                                        <label for="ElectionName" class="col-sm-3 col-form-label">Election Name: </label>
                                         <div class="col-sm-8">
-                                        <input type="text" class="form-control" placeholder="First Name" id="">
+                                        <input type="text" class="form-control" placeholder="Election Name" id="">
                                         </div>
                                     </div>
 
                                     <div class="mb-3 row">
-                                        <label for="MiddleName" class="col-sm-3 col-form-label">Middle Name: </label>
+                                        <label for="ElectionDate" class="col-sm-3 col-form-label">Election Date: </label>
                                         <div class="col-sm-8">
-                                        <input type="text" class="form-control" placeholder="Middle Name" id="">
+                                        <input type="date" class="form-control" placeholder="Middle Name" id="">
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    <div class="mb-3 row">
+                                        <label for="Access Code" class="col-sm-3 col-form-label">Start Time: </label>
+                                        <div class="col-sm-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select Time</option>
+                                            <option value="1">ITE ELECTION</option>
+                                            <option value="2">CSSG ELECTION</option>
+                                        </select>
                                         </div>
                                     </div>
 
                                     <div class="mb-3 row">
-                                        <label for="LastName" class="col-sm-3 col-form-label">Last Name: </label>
-                                        <div class="col-sm-8">
-                                        <input type="text" class="form-control" placeholder="Last Name" id="">
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-3 row">
-                                        <label for="Access Code" class="col-sm-3 col-form-label">Access Code: </label>
-                                        <div class="col-sm-8">
-                                        <input type="text" class="form-control" placeholder="Access Code" id="">
+                                        <label for="Access Code" class="col-sm-3 col-form-label">End Time: </label>
+                                        <div class="col-sm-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select Time</option>
+                                            <option value="1">ITE ELECTION</option>
+                                            <option value="2">CSSG ELECTION</option>
+                                        </select>
                                         </div>
                                     </div>
                                     
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Add as Admin</button>
+                                    <button type="button" class="btn btn-primary">Add Election</button>
                                 </div>
                         
                             </form>
                         </div>
                     </div>
-
-                
                 </div>
 
             <footer class="py-4 bg-light mt-auto">
