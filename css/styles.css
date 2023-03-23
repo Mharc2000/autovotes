@@ -11009,7 +11009,7 @@ body {
 }
 
 .sb-sidenav-dark {
-  background-color: #0449bf;
+  background-color: #00337C;
   color: rgba(255, 255, 255, 0.5);
 }
 .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
@@ -11232,16 +11232,29 @@ body {
   border-radius: 0.375rem !important;
 }
 
-
+#nav-color{
+  background-color: #00095a;
+}
 
 #nav-hover:hover,
 #nav-hover.active {
-  background: #00337C;
-  margin-left: 4px;
-  margin-right: 4px;
+
+  background:  #00095a;
+
 
 }
 
 #icon{
   color: white;
+}
+
+#nav-footer{
+  background-color: #00095a; 
+  color: white;
+}
+
+#shadow{
+  -webkit-box-shadow: -2px 3px 8.5008px -0.5008px #000000;
+  -moz-box-shadow: -2px 3px 8.5008px -0.5008px #000000;
+  box-shadow: -2px 3px 8.5008px -0.5008px #000000;
 }
