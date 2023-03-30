@@ -11264,3 +11264,8 @@ body {
   background: -webkit-linear-gradient(82deg, #6fa5ed 0%, #475aff 100%);
   background: linear-gradient(82deg, #6fa5ed 0%, #475aff 100%);
 }
+
+input[type=radio] ,input[type=checkbox] {
+  transform: scale(2);
+}
+
