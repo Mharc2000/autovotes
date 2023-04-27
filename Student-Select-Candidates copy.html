@@ -72,43 +72,55 @@
                    
 
                     <div class="d-flex justify-content-between mt-4 mx-4 my-3">
-                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="Student-dasboard.html" style="text-decoration: none;"> <i class="fas fa-home"></i> HOME</a></li>
-                              <li class="breadcrumb-item active" aria-current="page"> <i class="fas fa-trash"></i> ELECTION</li>
-                            </ol>
-                        </nav>
-
-                     
-                        
-                       
-                    </div>
+                        <h3 class="elec-name"> 
+                            <a class="navbar-brand mx-2" href="#">
+                                <img  src="" width="50" height="50" alt="" />
+                            </a>
+                           Election Name
+                        </h3>
+                            <nav class="mt-2" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="student-dashboard.php" style="text-decoration: none;">
+                                            <i class="fas fa-home"></i> HOME</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page"> <i class="fas fa-vote-yea"></i>
+                                        Election Name
+                                </ol>
+                            </nav>
+                        </div>
                   
                     <hr>
                     <div class="container">
 
-                        <h3 class="mx-3 mt-4"> Election Name: </h3>
 
                       
                         <div class="row">
 
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mx-3"> Candidate:  </h5>
 
-                            <h5 class="mx-3 mt-4"> Candidates for President:  </h5>
+                                <a type="button" tabindex="-1" data-bs-toggle="modal" data-bs-target="#addPosition" class="text-decoration-none mx-3"><i class="fa-solid fa-cart-shopping" width="50" height="50"> </i> My Candidates</a>
+                            </div>
+                          
                             <div class="col-sm-4">
-                              
-                                <div class="card mx-3 mt-3">
+
+                                <div class="card mx-3 mt-3 mb-3" style="border-radius:25px;" id="shadow2">
 
 
-                                    <img class="card-img img-fluid" src="img/donaldmc.jpg"  width="200"  alt="">
+                                    <img class="card-img img-fluid" style="width:500px; height: 200px; border-top-left-radius:25px; border-top-right-radius:25px;" src="img/donaldmc.jpg" alt="">
 
                                     <div class="card-body">
-                                        <h4 class="mx-3 my-3">Donald Trump</h4>
                                         
-                                        <div class="d-flex justify-content-center">
-                                            <input class="mx-3" type="radio" id="myRadioButton" name="options" value="option1">
-                                            <label for="myRadioButton"> Vote</label>
+                                                <h5 class="name mx-3 my-3 text-center">
+                                                   McDonald Trump
+                                                </h5>
+                                                <h5 class="position mx-3 my-3 text-center">
+                                                    Running for President
+                                                </h5>
 
-                                        </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="btn btn-sm btn-primary">Add as my Candidate</button>
+                                                </div>
+                                                
                                         
 
                                     </div>
@@ -120,194 +132,192 @@
     
                               
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card mx-3 mt-3">
-    
-            
-                                    <img class="card-img img-fluid" src="img/donaldmc.jpg" width="200" alt="">
+                           
 
-                                    <div class="card-body">
-                                        <h4 class="mx-3 my-3">Donald Trump</h4>
-                                       
 
-                                        <div class="d-flex justify-content-center">
-                                            <input class="mx-3" type="radio" id="myRadioButton" name="options" value="option1">
-                                            <label for="myRadioButton"> Vote</label>
-
-                                        </div>
-                                        
-
-                                    </div>
-    
-    
-                                </div>
     
                               
                             </div>
-
-
-                            <div class="col-sm-4">
-                                <div class="card mx-3 mt-3">
-    
-            
-                                    <img class="card-img img-fluid" src="img/donaldmc.jpg" width="200" alt="">
-           
-                                    <div class="card-body">
-                                        <h4 class="mx-3 my-3">Donald Trump</h4>
-                                        
-                                        <div class="d-flex justify-content-center">
-                                            <input class="mx-3" type="radio" id="myRadioButton" name="options" value="option1">
-                                            <label for="myRadioButton"> Vote</label>
-
-                                        </div>
-                                        
-
-                                    </div>
-    
-    
-                                </div>
-    
-                              
-                            </div>
-    
-                        </div>
 
                         <hr>
-                        <div class="row">
-
-      
-
-                            <h5 class="mx-3 mt-4"> Candidates for Vice President:  </h5>
-                            <div class="col-sm-4">
-                                <div class="card mx-3 mt-3">
-
-                                    <img class="card-img img-fluid" src="img/donaldmc.jpg"  width="200"  alt="">
-    
-                                    <div class="card-body">
-                                        <h4 class="mx-3 my-3">Donald Trump</h4>
-                                        
-                                        <div class="d-flex justify-content-center">
-                                            <input class="mx-3" type="checkbox" id="checkbox1" name="checkboxGroup" value="checkbox1">
-                                            <label for="checkbox1"> Vote</label>
-
-                                        </div>
-                                        
-                                        
-
-                                    </div>
-    
-                                </div>
-    
-                              
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="card mx-3 mt-3">
-    
-            
-                                    <img class="card-img img-fluid" src="img/donaldmc.jpg" width="200" alt="">
-                                
-                                    <div class="card-body">
-                                        <h4 class="mx-3 my-3">Donald Trump</h4>
-                                        
-                                        <div class="d-flex justify-content-center">
-                                            <input class="mx-3" type="checkbox" id="checkbox1" name="checkboxGroup" value="checkbox1">
-                                            <label for="checkbox1"> Vote</label>
-
-                                        </div>
-                                        
-                                        
-
-                                    </div>
-    
-                                </div>
-    
-                              
-                            </div>
-
-
-                            <div class="col-sm-4">
-                                <div class="card mx-3 mt-3">
-    
-            
-                                    <img class="card-img img-fluid" src="img/donaldmc.jpg" width="200" alt="">
-                
-                                    <div class="card-body">
-                                        <h4 class="mx-3 my-3">Donald Trump</h4>
-                                        
-                                        <div class="d-flex justify-content-center">
-                                            <input class="mx-3" type="checkbox" id="checkbox1" name="checkboxGroup" value="checkbox1">
-                                            <label for="checkbox1"> Vote</label>
-
-                                        </div>
-                                        
-
-                                    </div>
-    
-    
-                                </div>
-    
-                              
-                            </div>
-
-                            
-                            
-    
-                        </div>
-
-                        <hr>
-
-                       <div class="d-flex justify-content-center">
-                            <button class="btn btn-lg btn-primary">Submit</button>
-                       </div>
-    
                         
-                    </div>
+                    
                    
                 </main>
 
-                <div class="modal fade modal-signin" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade modal-signin" id="addPosition" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
                         <div class="modal-content rounded-5 shadow" style="border-radius: 30px;">
                             <div class="modal-header p-3 pb-3">
-                                <h5 class="modal-title" id="staticBackdropLabel">Adding Admin</h5>
+                                <h5 class="modal-title" id="staticBackdropLabel">Adding Position</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <br>
                             <form action="" method="POST" enctype="multipart/form-data">
-                                <div class="modal-body p-5 pt-0">
-                            
-                                    <div class="mb-3 row">
-                                        <label for="inputPassword" class="col-sm-3 col-form-label">First Name: </label>
-                                        <div class="col-sm-8">
-                                        <input type="text" class="form-control" placeholder="First Name" id="">
+                                <div class="modal-body p-5 pt-0 overflow-auto">
+                                    <div class="mb-5">
+                                        <h4>My President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
                                         </div>
+
                                     </div>
 
-                                    <div class="mb-3 row">
-                                        <label for="MiddleName" class="col-sm-3 col-form-label">Middle Name: </label>
-                                        <div class="col-sm-8">
-                                        <input type="text" class="form-control" placeholder="Middle Name" id="">
+
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
                                         </div>
+
                                     </div>
 
-                                    <div class="mb-3 row">
-                                        <label for="LastName" class="col-sm-3 col-form-label">Last Name: </label>
-                                        <div class="col-sm-8">
-                                        <input type="text" class="form-control" placeholder="Last Name" id="">
-                                        </div>
-                                    </div>
 
-                                    <div class="mb-3 row">
-                                        <label for="Access Code" class="col-sm-3 col-form-label">Access Code: </label>
-                                        <div class="col-sm-8">
-                                        <input type="text" class="form-control" placeholder="Access Code" id="">
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
                                         </div>
+
                                     </div>
                                     
+
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="mb-5">
+                                        <h4>My Vice President</h4>
+
+                                        <div class="card" id="shadow2">
+                                            <div class="d-flex justify-content-between">
+                                                <img class="card-img img-fluid" style="width: 100px; height: 100px;" src="img/donaldmc.jpg" alt="">
+                                                <h3 class="mt-4 text-center"> Donald Trump</h3>
+                                                <button class="mt-4 mb-4 mx-4 my-4 btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                            
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    
+                                       
+                                        
+                    
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Add as Admin</button>
+                                    <button type="button" class="btn btn-primary">Submit Candidates</button>
                                 </div>
                         
                             </form>
@@ -317,6 +327,7 @@
                 
                 </div>
 
+            
 
                 <footer class="py-4 bg-light mt-4">
                     <div class="container-fluid px-4">

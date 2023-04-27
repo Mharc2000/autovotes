@@ -11240,7 +11240,8 @@ body {
 #nav-hover.active {
 
   background:  #00095a;
-
+  margin-left: 4px;
+  margin-right: 4px;
 
 }
 
@@ -11251,6 +11252,10 @@ body {
 #nav-footer{
   background-color: #00095a; 
   color: white;
+}
+
+input[type=radio] ,input[type=checkbox] {
+  transform: scale(2);
 }
 
 #shadow{
@@ -11265,20 +11270,33 @@ body {
   background: linear-gradient(82deg, #6fa5ed 0%, #475aff 100%);
 }
 
-input[type=radio] ,input[type=checkbox] {
-  transform: scale(2);
+@media (max-width:767px){
+  
+  .name{
+    font-size:1rem;
+    
+  }
+  .position{
+    font-size: 1rem;
+  }
+  .elec-name{
+    font-size: 1rem;
+  }
+  .card-img{
+    width: 300px;
+    height: 100px;
+  }
 }
 
-.graph {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  margin-bottom: 20px;
+#shadow2{
+  -webkit-box-shadow: 0 0 13px 5.5px #e3e3e3;
+-moz-box-shadow: 0 0 13px 5.5px #e3e3e3;
+box-shadow: 0 0 13px 5.5px #e3e3e3;
 }
 
-.bar {
-  width: 100%;
-  background-color: #2196F3;
-  margin-bottom: 10px;
-  margin-right: 10px;
+.candidate-card {
+  flex-direction: row;
+}
+.candidate-card img {
+  width: 30%;
 }
